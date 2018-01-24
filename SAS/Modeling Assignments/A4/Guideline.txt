@@ -1,0 +1,22 @@
+Part 1.
+
+In orders of frames:
+
+1. Q1. TS plot.
+2. ARIMA reduced to lag=6.
+	Q1. Sample correlation.
+	-The more comprehensive version is in Frame 3.
+	-This plot shows autocorrelations greater than 3 are insignificant.
+3. ARIMA with 2nd-order autoregression.
+	-Q2.1.   ACF and PACF.
+	-Q2.2.   Use ACF and PACF to determine order of the autoregression process.
+	-Q2.3.1. 2nd-order autoregression model. (AR(2) is statistically insignificant.
+4. ARIMA with 1st-order autoregression.
+	-Q2.3.2. 1st-order autoregression model.
+	-Q3.1.   Autocorrelation Check for White Noise.
+
+==================================================================
+Part 2.
+
+Part 2 is basically a hand calculation problem.
+I'd estimate 2-3 sentences/equations for each problem.

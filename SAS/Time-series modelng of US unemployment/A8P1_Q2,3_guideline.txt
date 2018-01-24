@@ -1,0 +1,19 @@
+Logics of Q2 & Q3:
+
+Q2.Look at ACF set of unemp(1) (1st-order difference) first, that is, the 1st ACF set.
+	-I have increased the lag into 48 for it to be more obvious.
+	-ACF on seasonal terms (that is, lag 12, 24, 36, 48) decays very slowly.
+	-Therefore the 1st-order differenced series (the 'nonseasonal difference of the
+	 series') is not stationary.
+   Then, look at ACF set of unemp(1,12) (the required difference series in the question),
+   that is, the 2nd ACF set.
+	-Now, seasonal ACF converges to zero quickly.
+	-You can also talk about interaction terms being significant but that is totally
+	 optional.
+
+Q3.Look at ACF set of unemp(1,12).
+	-ACF decays quickly for both nonseasonal lags (lags excluding 12, 24, 36, and 48)
+	 and seasonal lags (12, 24, 36, and 48).
+	-Some interaction terms are slightly significant but not a major concern, because
+	they can be eliminated by multiplicative SARIMA model.
+	-Therefore, the series looks stationary.

@@ -1,0 +1,15 @@
+Data sets:
+1. (1,1,0)X(1,1,0)_12 (12 is the subscript) process.
+	-ACF and PACF are for the differenced series. Significant for several terms but
+	 most important ones are lag 1 and 12.
+	-We cannot go directly into (2,1,0)X(2,1,0)_12 because there might be an
+	 interactive effect between the seasonal component and the nonseasonal component.
+	-Residual is not white noise according to chi-square test.
+	-Residual PACF is significant at lag 2 and lag 24.
+	-This means we need to increase the order of AR component for both the
+	 seasonal part and the nonseasonal part to bring them to zero.
+2. (2,1,0)X(2,1,0)_12 process.
+	-ACF and PACF are for the differenced series, therefore should be the same.
+	-Residual is white noise according to chi-square test.
+	-Residual PACF insignificant.
+	-Therefore, residual is white noise and this is the appropriate model.

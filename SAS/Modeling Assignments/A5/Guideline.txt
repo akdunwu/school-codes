@@ -1,0 +1,13 @@
+In orders of frames:
+
+1. Regression model for question a).
+	-P-value>0.05 means coefficient is insignificant.
+2. Residual ARIMA for regression model for questions b) and c).
+	-b).ACF(1) & PACF(1) are obviously significant. Therefore not a white noise.
+	-b). chi-square testing indicates the same thing.
+	-c).ACF(2) is 'slightly out of the bound' but PACF(2) is not significant.
+		As a result, if we run AR(2), the coefficient for 2nd-order term will be insignificant.
+		Therefore, we ran a AR(1) process for question d). 
+3. Initial conditions for iteieration used in AR(1), which is same with 1..
+4. AR(1) process results.
+5. AR(1) model residual ARIMA.

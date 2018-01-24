@@ -1,0 +1,2305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001">
+<META content="text/html; charset=windows-1252" http-equiv=Content-type>
+<STYLE type=text/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: #fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=body onload=startup() onunload=shutdown()>
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=branch><A name=IDX></A>
+<DIV>
+<DIV class=c><IMG class="c graph" 
+style="BORDER-LEFT-WIDTH: 0px; HEIGHT: 600px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 800px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" 
+border=0 alt="Plot of homeresales by month" src="Q1-6_files/gplot.png"> 
+</DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX1></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Box Plot for homeresales" src="Q1-6_files/Boxplot.png"> 
+</DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX2></A>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: homeresales </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">170</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">170</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX3></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">12</TD>
+    <TD class="r data">1.331273E12</TD>
+    <TD class="r data">1.109394E11</TD>
+    <TD class="r data">162.44</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">157</TD>
+    <TD class="r data">1.072212E11</TD>
+    <TD class="r data">682937337</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">169</TD>
+    <TD class="r data">1.438494E12</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX4></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">26133</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.9255</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">354465</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.9198</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">7.37254</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX5></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence 
+  Limits</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">315539</TD>
+    <TD class="r data">7820.09421</TD>
+    <TD class="r data">40.35</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">300093</TD>
+    <TD class="r data">330985</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m1</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-178516</TD>
+    <TD class="r data">9711.44001</TD>
+    <TD class="r data" noWrap>-18.38</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-197698</TD>
+    <TD class="r data" noWrap>-159334</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m2</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-179938</TD>
+    <TD class="r data">9711.35388</TD>
+    <TD class="r data" noWrap>-18.53</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-199120</TD>
+    <TD class="r data" noWrap>-160756</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m3</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-92511</TD>
+    <TD class="r data">9879.48879</TD>
+    <TD class="r data" noWrap>-9.36</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-112024</TD>
+    <TD class="r data" noWrap>-72997</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m4</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-63223</TD>
+    <TD class="r data">9878.72678</TD>
+    <TD class="r data" noWrap>-6.40</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-82735</TD>
+    <TD class="r data" noWrap>-43710</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m5</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-27363</TD>
+    <TD class="r data">9878.13407</TD>
+    <TD class="r data" noWrap>-2.77</TD>
+    <TD class="r data">0.0063</TD>
+    <TD class="r data" noWrap>-46875</TD>
+    <TD class="r data" noWrap>-7852.30870</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m6</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">2281.48148</TD>
+    <TD class="r data">9877.71068</TD>
+    <TD class="r data">0.23</TD>
+    <TD class="r data">0.8176</TD>
+    <TD class="r data" noWrap>-17229</TD>
+    <TD class="r data">21792</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m7</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-17788</TD>
+    <TD class="r data">9877.45664</TD>
+    <TD class="r data" noWrap>-1.80</TD>
+    <TD class="r data">0.0736</TD>
+    <TD class="r data" noWrap>-37298</TD>
+    <TD class="r data">1722.01462</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m9</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-73641</TD>
+    <TD class="r data">9877.45664</TD>
+    <TD class="r data" noWrap>-7.46</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-93151</TD>
+    <TD class="r data" noWrap>-54131</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m10</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-70353</TD>
+    <TD class="r data">9877.71068</TD>
+    <TD class="r data" noWrap>-7.12</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-89863</TD>
+    <TD class="r data" noWrap>-50843</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m11</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-104208</TD>
+    <TD class="r data">9878.13407</TD>
+    <TD class="r data" noWrap>-10.55</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-123719</TD>
+    <TD class="r data" noWrap>-84697</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>m12</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-103277</TD>
+    <TD class="r data">9878.72678</TD>
+    <TD class="r data" noWrap>-10.45</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data" noWrap>-122790</TD>
+    <TD class="r data" noWrap>-83765</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>month</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">1355.02646</TD>
+    <TD class="r data">40.90088</TD>
+    <TD class="r data">33.13</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">1274.23948</TD>
+    <TD class="r data">1435.81343</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX6></A>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: homeresales </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Output Statistics" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Output Statistics</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Obs</TH>
+    <TH class="r b header" scope=col>Dependent<BR>Variable</TH>
+    <TH class="r b header" scope=col>Predicted<BR>Value</TH>
+    <TH class="r b header" scope=col>Std<BR>Error<BR>Mean<BR>Predict</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% CL Predict</TH>
+    <TH class="r b header" scope=col>Residual</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">213000</TD>
+    <TD class="r data">138378</TD>
+    <TD class="r data">7572</TD>
+    <TD class="r data">84637</TD>
+    <TD class="r data">192119</TD>
+    <TD class="r data">74622</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">207000</TD>
+    <TD class="r data">138311</TD>
+    <TD class="r data">7572</TD>
+    <TD class="r data">84570</TD>
+    <TD class="r data">192052</TD>
+    <TD class="r data">68689</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="r data">270000</TD>
+    <TD class="r data">227094</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">173294</TD>
+    <TD class="r data">280893</TD>
+    <TD class="r data">42906</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="r data">268000</TD>
+    <TD class="r data">257737</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">203937</TD>
+    <TD class="r data">311536</TD>
+    <TD class="r data">10263</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="r data">295000</TD>
+    <TD class="r data">294951</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">241151</TD>
+    <TD class="r data">348751</TD>
+    <TD class="r data">49.2063</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="r data">325000</TD>
+    <TD class="r data">325951</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">272151</TD>
+    <TD class="r data">379751</TD>
+    <TD class="r data" noWrap>-950.7937</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="r data">301000</TD>
+    <TD class="r data">307237</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">253437</TD>
+    <TD class="r data">361036</TD>
+    <TD class="r data" noWrap>-6237</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>8</TH>
+    <TD class="r data">340000</TD>
+    <TD class="r data">326379</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">272580</TD>
+    <TD class="r data">380179</TD>
+    <TD class="r data">13621</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>9</TH>
+    <TD class="r data">302000</TD>
+    <TD class="r data">254094</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">200294</TD>
+    <TD class="r data">307893</TD>
+    <TD class="r data">47906</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>10</TH>
+    <TD class="r data">295000</TD>
+    <TD class="r data">258737</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">204937</TD>
+    <TD class="r data">312536</TD>
+    <TD class="r data">36263</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>11</TH>
+    <TD class="r data">263000</TD>
+    <TD class="r data">226237</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">172437</TD>
+    <TD class="r data">280036</TD>
+    <TD class="r data">36763</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>12</TH>
+    <TD class="r data">245000</TD>
+    <TD class="r data">228522</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">174722</TD>
+    <TD class="r data">282322</TD>
+    <TD class="r data">16478</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>13</TH>
+    <TD class="r data">218000</TD>
+    <TD class="r data">154638</TD>
+    <TD class="r data">7362</TD>
+    <TD class="r data">101011</TD>
+    <TD class="r data">208265</TD>
+    <TD class="r data">63362</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>14</TH>
+    <TD class="r data">201000</TD>
+    <TD class="r data">154571</TD>
+    <TD class="r data">7362</TD>
+    <TD class="r data">100944</TD>
+    <TD class="r data">208198</TD>
+    <TD class="r data">46429</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>15</TH>
+    <TD class="r data">270000</TD>
+    <TD class="r data">243354</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">189659</TD>
+    <TD class="r data">297049</TD>
+    <TD class="r data">26646</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>16</TH>
+    <TD class="r data">279000</TD>
+    <TD class="r data">273997</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">220302</TD>
+    <TD class="r data">327692</TD>
+    <TD class="r data">5003</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>17</TH>
+    <TD class="r data">308000</TD>
+    <TD class="r data">311211</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">257516</TD>
+    <TD class="r data">364906</TD>
+    <TD class="r data" noWrap>-3211</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>18</TH>
+    <TD class="r data">324000</TD>
+    <TD class="r data">342211</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">288516</TD>
+    <TD class="r data">395906</TD>
+    <TD class="r data" noWrap>-18211</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>19</TH>
+    <TD class="r data">304000</TD>
+    <TD class="r data">323497</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">269802</TD>
+    <TD class="r data">377192</TD>
+    <TD class="r data" noWrap>-19497</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>20</TH>
+    <TD class="r data">340000</TD>
+    <TD class="r data">342640</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">288945</TD>
+    <TD class="r data">396335</TD>
+    <TD class="r data" noWrap>-2640</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>21</TH>
+    <TD class="r data">262000</TD>
+    <TD class="r data">270354</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">216659</TD>
+    <TD class="r data">324049</TD>
+    <TD class="r data" noWrap>-8354</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>22</TH>
+    <TD class="r data">268000</TD>
+    <TD class="r data">274997</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">221302</TD>
+    <TD class="r data">328692</TD>
+    <TD class="r data" noWrap>-6997</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>23</TH>
+    <TD class="r data">236000</TD>
+    <TD class="r data">242497</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">188802</TD>
+    <TD class="r data">296192</TD>
+    <TD class="r data" noWrap>-6497</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>24</TH>
+    <TD class="r data">210000</TD>
+    <TD class="r data">244783</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">191088</TD>
+    <TD class="r data">298477</TD>
+    <TD class="r data" noWrap>-34783</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>25</TH>
+    <TD class="r data">176000</TD>
+    <TD class="r data">170898</TD>
+    <TD class="r data">7180</TD>
+    <TD class="r data">117368</TD>
+    <TD class="r data">224429</TD>
+    <TD class="r data">5102</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>26</TH>
+    <TD class="r data">182000</TD>
+    <TD class="r data">170832</TD>
+    <TD class="r data">7180</TD>
+    <TD class="r data">117301</TD>
+    <TD class="r data">224362</TD>
+    <TD class="r data">11168</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>27</TH>
+    <TD class="r data">243000</TD>
+    <TD class="r data">259614</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">206007</TD>
+    <TD class="r data">313222</TD>
+    <TD class="r data" noWrap>-16614</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>28</TH>
+    <TD class="r data">287000</TD>
+    <TD class="r data">290257</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">236650</TD>
+    <TD class="r data">343864</TD>
+    <TD class="r data" noWrap>-3257</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>29</TH>
+    <TD class="r data">328000</TD>
+    <TD class="r data">327471</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">273864</TD>
+    <TD class="r data">381079</TD>
+    <TD class="r data">528.5714</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>30</TH>
+    <TD class="r data">331000</TD>
+    <TD class="r data">358471</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">304864</TD>
+    <TD class="r data">412079</TD>
+    <TD class="r data" noWrap>-27471</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>31</TH>
+    <TD class="r data">314000</TD>
+    <TD class="r data">339757</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">286150</TD>
+    <TD class="r data">393364</TD>
+    <TD class="r data" noWrap>-25757</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>32</TH>
+    <TD class="r data">315000</TD>
+    <TD class="r data">358900</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">305293</TD>
+    <TD class="r data">412507</TD>
+    <TD class="r data" noWrap>-43900</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>33</TH>
+    <TD class="r data">266000</TD>
+    <TD class="r data">286614</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">233007</TD>
+    <TD class="r data">340222</TD>
+    <TD class="r data" noWrap>-20614</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>34</TH>
+    <TD class="r data">268000</TD>
+    <TD class="r data">291257</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">237650</TD>
+    <TD class="r data">344864</TD>
+    <TD class="r data" noWrap>-23257</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>35</TH>
+    <TD class="r data">239000</TD>
+    <TD class="r data">258757</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">205150</TD>
+    <TD class="r data">312364</TD>
+    <TD class="r data" noWrap>-19757</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>36</TH>
+    <TD class="r data">237000</TD>
+    <TD class="r data">261043</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">207436</TD>
+    <TD class="r data">314650</TD>
+    <TD class="r data" noWrap>-24043</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>37</TH>
+    <TD class="r data">198000</TD>
+    <TD class="r data">187159</TD>
+    <TD class="r data">7027</TD>
+    <TD class="r data">133707</TD>
+    <TD class="r data">240610</TD>
+    <TD class="r data">10841</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>38</TH>
+    <TD class="r data">207000</TD>
+    <TD class="r data">187092</TD>
+    <TD class="r data">7027</TD>
+    <TD class="r data">133641</TD>
+    <TD class="r data">240544</TD>
+    <TD class="r data">19908</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>39</TH>
+    <TD class="r data">276000</TD>
+    <TD class="r data">275875</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">222338</TD>
+    <TD class="r data">329412</TD>
+    <TD class="r data">125.3968</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>40</TH>
+    <TD class="r data">309000</TD>
+    <TD class="r data">306517</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">252980</TD>
+    <TD class="r data">360055</TD>
+    <TD class="r data">2483</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>41</TH>
+    <TD class="r data">316000</TD>
+    <TD class="r data">343732</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">290195</TD>
+    <TD class="r data">397269</TD>
+    <TD class="r data" noWrap>-27732</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>42</TH>
+    <TD class="r data">343000</TD>
+    <TD class="r data">374732</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">321195</TD>
+    <TD class="r data">428269</TD>
+    <TD class="r data" noWrap>-31732</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>43</TH>
+    <TD class="r data">326000</TD>
+    <TD class="r data">356017</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">302480</TD>
+    <TD class="r data">409555</TD>
+    <TD class="r data" noWrap>-30017</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>44</TH>
+    <TD class="r data">319000</TD>
+    <TD class="r data">375160</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">321623</TD>
+    <TD class="r data">428697</TD>
+    <TD class="r data" noWrap>-56160</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>45</TH>
+    <TD class="r data">293000</TD>
+    <TD class="r data">302875</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">249338</TD>
+    <TD class="r data">356412</TD>
+    <TD class="r data" noWrap>-9875</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>46</TH>
+    <TD class="r data">310000</TD>
+    <TD class="r data">307517</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">253980</TD>
+    <TD class="r data">361055</TD>
+    <TD class="r data">2483</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>47</TH>
+    <TD class="r data">281000</TD>
+    <TD class="r data">275017</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">221480</TD>
+    <TD class="r data">328555</TD>
+    <TD class="r data">5983</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>48</TH>
+    <TD class="r data">301000</TD>
+    <TD class="r data">277303</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">223766</TD>
+    <TD class="r data">330840</TD>
+    <TD class="r data">23697</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>49</TH>
+    <TD class="r data">213000</TD>
+    <TD class="r data">203419</TD>
+    <TD class="r data">6906</TD>
+    <TD class="r data">150029</TD>
+    <TD class="r data">256809</TD>
+    <TD class="r data">9581</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>50</TH>
+    <TD class="r data">204000</TD>
+    <TD class="r data">203352</TD>
+    <TD class="r data">6906</TD>
+    <TD class="r data">149963</TD>
+    <TD class="r data">256742</TD>
+    <TD class="r data">647.6190</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>51</TH>
+    <TD class="r data">272000</TD>
+    <TD class="r data">292135</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">238651</TD>
+    <TD class="r data">345619</TD>
+    <TD class="r data" noWrap>-20135</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>52</TH>
+    <TD class="r data">308000</TD>
+    <TD class="r data">322778</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">269293</TD>
+    <TD class="r data">376262</TD>
+    <TD class="r data" noWrap>-14778</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>53</TH>
+    <TD class="r data">328000</TD>
+    <TD class="r data">359992</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">306508</TD>
+    <TD class="r data">413476</TD>
+    <TD class="r data" noWrap>-31992</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>54</TH>
+    <TD class="r data">379000</TD>
+    <TD class="r data">390992</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">337508</TD>
+    <TD class="r data">444476</TD>
+    <TD class="r data" noWrap>-11992</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>55</TH>
+    <TD class="r data">368000</TD>
+    <TD class="r data">372278</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">318793</TD>
+    <TD class="r data">425762</TD>
+    <TD class="r data" noWrap>-4278</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>56</TH>
+    <TD class="r data">383000</TD>
+    <TD class="r data">391421</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">337936</TD>
+    <TD class="r data">444905</TD>
+    <TD class="r data" noWrap>-8421</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>57</TH>
+    <TD class="r data">338000</TD>
+    <TD class="r data">319135</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">265651</TD>
+    <TD class="r data">372619</TD>
+    <TD class="r data">18865</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>58</TH>
+    <TD class="r data">330000</TD>
+    <TD class="r data">323778</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">270293</TD>
+    <TD class="r data">377262</TD>
+    <TD class="r data">6222</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>59</TH>
+    <TD class="r data">325000</TD>
+    <TD class="r data">291278</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">237793</TD>
+    <TD class="r data">344762</TD>
+    <TD class="r data">33722</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>60</TH>
+    <TD class="r data">339000</TD>
+    <TD class="r data">293563</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">240079</TD>
+    <TD class="r data">347048</TD>
+    <TD class="r data">45437</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>61</TH>
+    <TD class="r data">239000</TD>
+    <TD class="r data">219679</TD>
+    <TD class="r data">6819</TD>
+    <TD class="r data">166334</TD>
+    <TD class="r data">273025</TD>
+    <TD class="r data">19321</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>62</TH>
+    <TD class="r data">225000</TD>
+    <TD class="r data">219613</TD>
+    <TD class="r data">6819</TD>
+    <TD class="r data">166267</TD>
+    <TD class="r data">272959</TD>
+    <TD class="r data">5387</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>63</TH>
+    <TD class="r data">320000</TD>
+    <TD class="r data">308395</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">254946</TD>
+    <TD class="r data">361844</TD>
+    <TD class="r data">11605</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>64</TH>
+    <TD class="r data">356000</TD>
+    <TD class="r data">339038</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">285589</TD>
+    <TD class="r data">392487</TD>
+    <TD class="r data">16962</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>65</TH>
+    <TD class="r data">385000</TD>
+    <TD class="r data">376252</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">322803</TD>
+    <TD class="r data">429702</TD>
+    <TD class="r data">8748</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>66</TH>
+    <TD class="r data">404000</TD>
+    <TD class="r data">407252</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">353803</TD>
+    <TD class="r data">460702</TD>
+    <TD class="r data" noWrap>-3252</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>67</TH>
+    <TD class="r data">359000</TD>
+    <TD class="r data">388538</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">335089</TD>
+    <TD class="r data">441987</TD>
+    <TD class="r data" noWrap>-29538</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>68</TH>
+    <TD class="r data">392000</TD>
+    <TD class="r data">407681</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">354232</TD>
+    <TD class="r data">461130</TD>
+    <TD class="r data" noWrap>-15681</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>69</TH>
+    <TD class="r data">330000</TD>
+    <TD class="r data">335395</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">281946</TD>
+    <TD class="r data">388844</TD>
+    <TD class="r data" noWrap>-5395</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>70</TH>
+    <TD class="r data">313000</TD>
+    <TD class="r data">340038</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">286589</TD>
+    <TD class="r data">393487</TD>
+    <TD class="r data" noWrap>-27038</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>71</TH>
+    <TD class="r data">295000</TD>
+    <TD class="r data">307538</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">254089</TD>
+    <TD class="r data">360987</TD>
+    <TD class="r data" noWrap>-12538</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>72</TH>
+    <TD class="r data">299000</TD>
+    <TD class="r data">309824</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">256375</TD>
+    <TD class="r data">363273</TD>
+    <TD class="r data" noWrap>-10824</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>73</TH>
+    <TD class="r data">217000</TD>
+    <TD class="r data">235940</TD>
+    <TD class="r data">6765</TD>
+    <TD class="r data">182620</TD>
+    <TD class="r data">289259</TD>
+    <TD class="r data" noWrap>-18940</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>74</TH>
+    <TD class="r data">207000</TD>
+    <TD class="r data">235873</TD>
+    <TD class="r data">6765</TD>
+    <TD class="r data">182554</TD>
+    <TD class="r data">289192</TD>
+    <TD class="r data" noWrap>-28873</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>75</TH>
+    <TD class="r data">289000</TD>
+    <TD class="r data">324656</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">271224</TD>
+    <TD class="r data">378087</TD>
+    <TD class="r data" noWrap>-35656</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>76</TH>
+    <TD class="r data">286000</TD>
+    <TD class="r data">355298</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">301867</TD>
+    <TD class="r data">408730</TD>
+    <TD class="r data" noWrap>-69298</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>77</TH>
+    <TD class="r data">352000</TD>
+    <TD class="r data">392513</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">339081</TD>
+    <TD class="r data">445944</TD>
+    <TD class="r data" noWrap>-40513</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>78</TH>
+    <TD class="r data">397000</TD>
+    <TD class="r data">423513</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">370081</TD>
+    <TD class="r data">476944</TD>
+    <TD class="r data" noWrap>-26513</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>79</TH>
+    <TD class="r data">368000</TD>
+    <TD class="r data">404798</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">351367</TD>
+    <TD class="r data">458230</TD>
+    <TD class="r data" noWrap>-36798</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>80</TH>
+    <TD class="r data">427000</TD>
+    <TD class="r data">423941</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">370510</TD>
+    <TD class="r data">477373</TD>
+    <TD class="r data">3059</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>81</TH>
+    <TD class="r data">353000</TD>
+    <TD class="r data">351656</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">298224</TD>
+    <TD class="r data">405087</TD>
+    <TD class="r data">1344</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>82</TH>
+    <TD class="r data">353000</TD>
+    <TD class="r data">356298</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">302867</TD>
+    <TD class="r data">409730</TD>
+    <TD class="r data" noWrap>-3298</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>83</TH>
+    <TD class="r data">326000</TD>
+    <TD class="r data">323798</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">270367</TD>
+    <TD class="r data">377230</TD>
+    <TD class="r data">2202</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>84</TH>
+    <TD class="r data">311000</TD>
+    <TD class="r data">326084</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">272652</TD>
+    <TD class="r data">379516</TD>
+    <TD class="r data" noWrap>-15084</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>85</TH>
+    <TD class="r data">239000</TD>
+    <TD class="r data">252200</TD>
+    <TD class="r data">6748</TD>
+    <TD class="r data">198889</TD>
+    <TD class="r data">305511</TD>
+    <TD class="r data" noWrap>-13200</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>86</TH>
+    <TD class="r data">238000</TD>
+    <TD class="r data">252133</TD>
+    <TD class="r data">6748</TD>
+    <TD class="r data">198823</TD>
+    <TD class="r data">305444</TD>
+    <TD class="r data" noWrap>-14133</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>87</TH>
+    <TD class="r data">318000</TD>
+    <TD class="r data">340916</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">287484</TD>
+    <TD class="r data">394348</TD>
+    <TD class="r data" noWrap>-22916</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>88</TH>
+    <TD class="r data">376000</TD>
+    <TD class="r data">371559</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">318127</TD>
+    <TD class="r data">424990</TD>
+    <TD class="r data">4441</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>89</TH>
+    <TD class="r data">418000</TD>
+    <TD class="r data">408773</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">355341</TD>
+    <TD class="r data">462205</TD>
+    <TD class="r data">9227</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>90</TH>
+    <TD class="r data">405000</TD>
+    <TD class="r data">439773</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">386341</TD>
+    <TD class="r data">493205</TD>
+    <TD class="r data" noWrap>-34773</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>91</TH>
+    <TD class="r data">417000</TD>
+    <TD class="r data">421059</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">367627</TD>
+    <TD class="r data">474490</TD>
+    <TD class="r data" noWrap>-4059</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>92</TH>
+    <TD class="r data">433000</TD>
+    <TD class="r data">440202</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">386770</TD>
+    <TD class="r data">493633</TD>
+    <TD class="r data" noWrap>-7202</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>93</TH>
+    <TD class="r data">345000</TD>
+    <TD class="r data">367916</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">314484</TD>
+    <TD class="r data">421348</TD>
+    <TD class="r data" noWrap>-22916</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>94</TH>
+    <TD class="r data">362000</TD>
+    <TD class="r data">372559</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">319127</TD>
+    <TD class="r data">425990</TD>
+    <TD class="r data" noWrap>-10559</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>95</TH>
+    <TD class="r data">325000</TD>
+    <TD class="r data">340059</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">286627</TD>
+    <TD class="r data">393490</TD>
+    <TD class="r data" noWrap>-15059</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>96</TH>
+    <TD class="r data">321000</TD>
+    <TD class="r data">342344</TD>
+    <TD class="r data">6989</TD>
+    <TD class="r data">288913</TD>
+    <TD class="r data">395776</TD>
+    <TD class="r data" noWrap>-21344</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>97</TH>
+    <TD class="r data">250000</TD>
+    <TD class="r data">268460</TD>
+    <TD class="r data">6765</TD>
+    <TD class="r data">215141</TD>
+    <TD class="r data">321780</TD>
+    <TD class="r data" noWrap>-18460</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>98</TH>
+    <TD class="r data">243000</TD>
+    <TD class="r data">268394</TD>
+    <TD class="r data">6765</TD>
+    <TD class="r data">215074</TD>
+    <TD class="r data">321713</TD>
+    <TD class="r data" noWrap>-25394</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>99</TH>
+    <TD class="r data">313000</TD>
+    <TD class="r data">357176</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">303727</TD>
+    <TD class="r data">410625</TD>
+    <TD class="r data" noWrap>-44176</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>100</TH>
+    <TD class="r data">364000</TD>
+    <TD class="r data">387819</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">334370</TD>
+    <TD class="r data">441268</TD>
+    <TD class="r data" noWrap>-23819</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>101</TH>
+    <TD class="r data">413000</TD>
+    <TD class="r data">425033</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">371584</TD>
+    <TD class="r data">478483</TD>
+    <TD class="r data" noWrap>-12033</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>102</TH>
+    <TD class="r data">425000</TD>
+    <TD class="r data">456033</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">402584</TD>
+    <TD class="r data">509483</TD>
+    <TD class="r data" noWrap>-31033</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>103</TH>
+    <TD class="r data">432000</TD>
+    <TD class="r data">437319</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">383870</TD>
+    <TD class="r data">490768</TD>
+    <TD class="r data" noWrap>-5319</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>104</TH>
+    <TD class="r data">448000</TD>
+    <TD class="r data">456462</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">403013</TD>
+    <TD class="r data">509911</TD>
+    <TD class="r data" noWrap>-8462</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>105</TH>
+    <TD class="r data">387000</TD>
+    <TD class="r data">384176</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">330727</TD>
+    <TD class="r data">437625</TD>
+    <TD class="r data">2824</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>106</TH>
+    <TD class="r data">406000</TD>
+    <TD class="r data">388819</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">335370</TD>
+    <TD class="r data">442268</TD>
+    <TD class="r data">17181</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>107</TH>
+    <TD class="r data">339000</TD>
+    <TD class="r data">356319</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">302870</TD>
+    <TD class="r data">409768</TD>
+    <TD class="r data" noWrap>-17319</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>108</TH>
+    <TD class="r data">362000</TD>
+    <TD class="r data">358605</TD>
+    <TD class="r data">7023</TD>
+    <TD class="r data">305156</TD>
+    <TD class="r data">412054</TD>
+    <TD class="r data">3395</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>109</TH>
+    <TD class="r data">265000</TD>
+    <TD class="r data">284721</TD>
+    <TD class="r data">6819</TD>
+    <TD class="r data">231375</TD>
+    <TD class="r data">338066</TD>
+    <TD class="r data" noWrap>-19721</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>110</TH>
+    <TD class="r data">276000</TD>
+    <TD class="r data">284654</TD>
+    <TD class="r data">6819</TD>
+    <TD class="r data">231308</TD>
+    <TD class="r data">338000</TD>
+    <TD class="r data" noWrap>-8654</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>111</TH>
+    <TD class="r data">385000</TD>
+    <TD class="r data">373437</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">319952</TD>
+    <TD class="r data">426921</TD>
+    <TD class="r data">11563</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>112</TH>
+    <TD class="r data">427000</TD>
+    <TD class="r data">404079</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">350595</TD>
+    <TD class="r data">457564</TD>
+    <TD class="r data">22921</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>113</TH>
+    <TD class="r data">460000</TD>
+    <TD class="r data">441294</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">387809</TD>
+    <TD class="r data">494778</TD>
+    <TD class="r data">18706</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>114</TH>
+    <TD class="r data">508000</TD>
+    <TD class="r data">472294</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">418809</TD>
+    <TD class="r data">525778</TD>
+    <TD class="r data">35706</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>115</TH>
+    <TD class="r data">507000</TD>
+    <TD class="r data">453579</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">400095</TD>
+    <TD class="r data">507064</TD>
+    <TD class="r data">53421</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>116</TH>
+    <TD class="r data">490000</TD>
+    <TD class="r data">472722</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">419238</TD>
+    <TD class="r data">526207</TD>
+    <TD class="r data">17278</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>117</TH>
+    <TD class="r data">421000</TD>
+    <TD class="r data">400437</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">346952</TD>
+    <TD class="r data">453921</TD>
+    <TD class="r data">20563</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>118</TH>
+    <TD class="r data">431000</TD>
+    <TD class="r data">405079</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">351595</TD>
+    <TD class="r data">458564</TD>
+    <TD class="r data">25921</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>119</TH>
+    <TD class="r data">386000</TD>
+    <TD class="r data">372579</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">319095</TD>
+    <TD class="r data">426064</TD>
+    <TD class="r data">13421</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>120</TH>
+    <TD class="r data">414000</TD>
+    <TD class="r data">374865</TD>
+    <TD class="r data">7091</TD>
+    <TD class="r data">321381</TD>
+    <TD class="r data">428349</TD>
+    <TD class="r data">39135</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>121</TH>
+    <TD class="r data">291000</TD>
+    <TD class="r data">300981</TD>
+    <TD class="r data">6906</TD>
+    <TD class="r data">247591</TD>
+    <TD class="r data">354371</TD>
+    <TD class="r data" noWrap>-9981</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>122</TH>
+    <TD class="r data">293000</TD>
+    <TD class="r data">300914</TD>
+    <TD class="r data">6906</TD>
+    <TD class="r data">247524</TD>
+    <TD class="r data">354304</TD>
+    <TD class="r data" noWrap>-7914</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>123</TH>
+    <TD class="r data">411000</TD>
+    <TD class="r data">389697</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">336160</TD>
+    <TD class="r data">443234</TD>
+    <TD class="r data">21303</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>124</TH>
+    <TD class="r data">455000</TD>
+    <TD class="r data">420340</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">366803</TD>
+    <TD class="r data">473877</TD>
+    <TD class="r data">34660</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>125</TH>
+    <TD class="r data">476000</TD>
+    <TD class="r data">457554</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">404017</TD>
+    <TD class="r data">511091</TD>
+    <TD class="r data">18446</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>126</TH>
+    <TD class="r data">564000</TD>
+    <TD class="r data">488554</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">435017</TD>
+    <TD class="r data">542091</TD>
+    <TD class="r data">75446</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>127</TH>
+    <TD class="r data">532000</TD>
+    <TD class="r data">469840</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">416303</TD>
+    <TD class="r data">523377</TD>
+    <TD class="r data">62160</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>128</TH>
+    <TD class="r data">533000</TD>
+    <TD class="r data">488983</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">435445</TD>
+    <TD class="r data">542520</TD>
+    <TD class="r data">44017</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>129</TH>
+    <TD class="r data">434000</TD>
+    <TD class="r data">416697</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">363160</TD>
+    <TD class="r data">470234</TD>
+    <TD class="r data">17303</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>130</TH>
+    <TD class="r data">420000</TD>
+    <TD class="r data">421340</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">367803</TD>
+    <TD class="r data">474877</TD>
+    <TD class="r data" noWrap>-1340</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>131</TH>
+    <TD class="r data">395000</TD>
+    <TD class="r data">388840</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">335303</TD>
+    <TD class="r data">442377</TD>
+    <TD class="r data">6160</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>132</TH>
+    <TD class="r data">401000</TD>
+    <TD class="r data">391125</TD>
+    <TD class="r data">7193</TD>
+    <TD class="r data">337588</TD>
+    <TD class="r data">444662</TD>
+    <TD class="r data">9875</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>133</TH>
+    <TD class="r data">283000</TD>
+    <TD class="r data">317241</TD>
+    <TD class="r data">7027</TD>
+    <TD class="r data">263790</TD>
+    <TD class="r data">370693</TD>
+    <TD class="r data" noWrap>-34241</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>134</TH>
+    <TD class="r data">310000</TD>
+    <TD class="r data">317175</TD>
+    <TD class="r data">7027</TD>
+    <TD class="r data">263723</TD>
+    <TD class="r data">370626</TD>
+    <TD class="r data" noWrap>-7175</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>135</TH>
+    <TD class="r data">420000</TD>
+    <TD class="r data">405957</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">352350</TD>
+    <TD class="r data">459564</TD>
+    <TD class="r data">14043</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>136</TH>
+    <TD class="r data">430000</TD>
+    <TD class="r data">436600</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">382993</TD>
+    <TD class="r data">490207</TD>
+    <TD class="r data" noWrap>-6600</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>137</TH>
+    <TD class="r data">489000</TD>
+    <TD class="r data">473814</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">420207</TD>
+    <TD class="r data">527422</TD>
+    <TD class="r data">15186</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>138</TH>
+    <TD class="r data">542000</TD>
+    <TD class="r data">504814</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">451207</TD>
+    <TD class="r data">558422</TD>
+    <TD class="r data">37186</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>139</TH>
+    <TD class="r data">488000</TD>
+    <TD class="r data">486100</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">432493</TD>
+    <TD class="r data">539707</TD>
+    <TD class="r data">1900</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>140</TH>
+    <TD class="r data">530000</TD>
+    <TD class="r data">505243</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">451636</TD>
+    <TD class="r data">558850</TD>
+    <TD class="r data">24757</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>141</TH>
+    <TD class="r data">439000</TD>
+    <TD class="r data">432957</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">379350</TD>
+    <TD class="r data">486564</TD>
+    <TD class="r data">6043</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>142</TH>
+    <TD class="r data">432000</TD>
+    <TD class="r data">437600</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">383993</TD>
+    <TD class="r data">491207</TD>
+    <TD class="r data" noWrap>-5600</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>143</TH>
+    <TD class="r data">407000</TD>
+    <TD class="r data">405100</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">351493</TD>
+    <TD class="r data">458707</TD>
+    <TD class="r data">1900</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>144</TH>
+    <TD class="r data">382000</TD>
+    <TD class="r data">407386</TD>
+    <TD class="r data">7325</TD>
+    <TD class="r data">353778</TD>
+    <TD class="r data">460993</TD>
+    <TD class="r data" noWrap>-25386</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>145</TH>
+    <TD class="r data">294000</TD>
+    <TD class="r data">333502</TD>
+    <TD class="r data">7180</TD>
+    <TD class="r data">279971</TD>
+    <TD class="r data">387032</TD>
+    <TD class="r data" noWrap>-39502</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>146</TH>
+    <TD class="r data">304000</TD>
+    <TD class="r data">333435</TD>
+    <TD class="r data">7180</TD>
+    <TD class="r data">279904</TD>
+    <TD class="r data">386965</TD>
+    <TD class="r data" noWrap>-29435</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>147</TH>
+    <TD class="r data">437000</TD>
+    <TD class="r data">422217</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">368523</TD>
+    <TD class="r data">475912</TD>
+    <TD class="r data">14783</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>148</TH>
+    <TD class="r data">450000</TD>
+    <TD class="r data">452860</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">399165</TD>
+    <TD class="r data">506555</TD>
+    <TD class="r data" noWrap>-2860</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>149</TH>
+    <TD class="r data">504000</TD>
+    <TD class="r data">490075</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">436380</TD>
+    <TD class="r data">543769</TD>
+    <TD class="r data">13925</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>150</TH>
+    <TD class="r data">558000</TD>
+    <TD class="r data">521075</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">467380</TD>
+    <TD class="r data">574769</TD>
+    <TD class="r data">36925</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>151</TH>
+    <TD class="r data">529000</TD>
+    <TD class="r data">502360</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">448665</TD>
+    <TD class="r data">556055</TD>
+    <TD class="r data">26640</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>152</TH>
+    <TD class="r data">559000</TD>
+    <TD class="r data">521503</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">467808</TD>
+    <TD class="r data">575198</TD>
+    <TD class="r data">37497</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>153</TH>
+    <TD class="r data">416000</TD>
+    <TD class="r data">449217</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">395523</TD>
+    <TD class="r data">502912</TD>
+    <TD class="r data" noWrap>-33217</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>154</TH>
+    <TD class="r data">438000</TD>
+    <TD class="r data">453860</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">400165</TD>
+    <TD class="r data">507555</TD>
+    <TD class="r data" noWrap>-15860</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>155</TH>
+    <TD class="r data">402000</TD>
+    <TD class="r data">421360</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">367665</TD>
+    <TD class="r data">475055</TD>
+    <TD class="r data" noWrap>-19360</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>156</TH>
+    <TD class="r data">404000</TD>
+    <TD class="r data">423646</TD>
+    <TD class="r data">7488</TD>
+    <TD class="r data">369951</TD>
+    <TD class="r data">477341</TD>
+    <TD class="r data" noWrap>-19646</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>157</TH>
+    <TD class="r data">340000</TD>
+    <TD class="r data">349762</TD>
+    <TD class="r data">7362</TD>
+    <TD class="r data">296135</TD>
+    <TD class="r data">403389</TD>
+    <TD class="r data" noWrap>-9762</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>158</TH>
+    <TD class="r data">340000</TD>
+    <TD class="r data">349695</TD>
+    <TD class="r data">7362</TD>
+    <TD class="r data">296068</TD>
+    <TD class="r data">403322</TD>
+    <TD class="r data" noWrap>-9695</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>159</TH>
+    <TD class="r data">435000</TD>
+    <TD class="r data">438478</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">384678</TD>
+    <TD class="r data">492278</TD>
+    <TD class="r data" noWrap>-3478</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>160</TH>
+    <TD class="r data">493000</TD>
+    <TD class="r data">469121</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">415321</TD>
+    <TD class="r data">522920</TD>
+    <TD class="r data">23879</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>161</TH>
+    <TD class="r data">537000</TD>
+    <TD class="r data">506335</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">452535</TD>
+    <TD class="r data">560135</TD>
+    <TD class="r data">30665</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>162</TH>
+    <TD class="r data">538000</TD>
+    <TD class="r data">537335</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">483535</TD>
+    <TD class="r data">591135</TD>
+    <TD class="r data">665.0794</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>163</TH>
+    <TD class="r data">536000</TD>
+    <TD class="r data">518621</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">464821</TD>
+    <TD class="r data">572420</TD>
+    <TD class="r data">17379</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>164</TH>
+    <TD class="r data">540000</TD>
+    <TD class="r data">537763</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">483964</TD>
+    <TD class="r data">591563</TD>
+    <TD class="r data">2237</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>165</TH>
+    <TD class="r data">451000</TD>
+    <TD class="r data">465478</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">411678</TD>
+    <TD class="r data">519278</TD>
+    <TD class="r data" noWrap>-14478</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>166</TH>
+    <TD class="r data">476000</TD>
+    <TD class="r data">470121</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">416321</TD>
+    <TD class="r data">523920</TD>
+    <TD class="r data">5879</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>167</TH>
+    <TD class="r data">428000</TD>
+    <TD class="r data">437621</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">383821</TD>
+    <TD class="r data">491420</TD>
+    <TD class="r data" noWrap>-9621</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>168</TH>
+    <TD class="r data">453000</TD>
+    <TD class="r data">439906</TD>
+    <TD class="r data">7678</TD>
+    <TD class="r data">386107</TD>
+    <TD class="r data">493706</TD>
+    <TD class="r data">13094</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>169</TH>
+    <TD class="r data">347000</TD>
+    <TD class="r data">366022</TD>
+    <TD class="r data">7572</TD>
+    <TD class="r data">312281</TD>
+    <TD class="r data">419763</TD>
+    <TD class="r data" noWrap>-19022</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>170</TH>
+    <TD class="r data">345000</TD>
+    <TD class="r data">365956</TD>
+    <TD class="r data">7572</TD>
+    <TD class="r data">312215</TD>
+    <TD class="r data">419696</TD>
+    <TD class="r data" noWrap>-20956</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX7></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Residual Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Sum of Residuals</TH>
+    <TD class="r data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Sum of Squared Residuals</TH>
+    <TD class="r data">1.072212E11</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Predicted Residual SS (PRESS)</TH>
+    <TD class="r data">1.259112E11</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX8></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for homeresales." 
+src="Q1-6_files/DiagnosticsPanel.png"> </DIV></DIV><BR><A name=IDX9></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for homeresales." 
+src="Q1-6_files/ResidualPlot.png"> </DIV></DIV><BR><A name=IDX10></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for homeresales." 
+src="Q1-6_files/ResidualPlot1.png"> </DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX11></A>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Results" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Test 1 Results for 
+      Dependent Variable homeresales</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Numerator</TH>
+    <TD class="r data">11</TD>
+    <TD class="r data">54078421110</TD>
+    <TD class="r data">79.19</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Denominator</TH>
+    <TD class="r data">157</TD>
+    <TD class="r data">682937337</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX12></A>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Results" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Test 2 Results for 
+      Dependent Variable homeresales</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Numerator</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">7.495681E11</TD>
+    <TD class="r data">1097.56</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Denominator</TH>
+    <TD class="r data">157</TD>
+    <TD class="r data">682937337</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX13></A>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Results" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Test 3 Results for 
+      Dependent Variable homeresales</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Numerator</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2819392693</TD>
+    <TD class="r data">4.13</TD>
+    <TD class="r data">0.0439</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Denominator</TH>
+    <TD class="r data">157</TD>
+    <TD class="r data">682937337</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX14></A>
+<DIV>
+<DIV class=c><IMG class="c graph" 
+style="BORDER-LEFT-WIDTH: 0px; HEIGHT: 600px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 800px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" 
+border=0 alt="Plot of homeresales by month" src="Q1-6_files/gplot1.png"> 
+</DIV></DIV><BR></DIV></BODY></HTML>

@@ -1,0 +1,9 @@
+By order of frames
+1.TS plot of data. (Q1.1)
+2. Box plot by month. (Q1.1)
+3. Regression model:coefficients w/ confidence intervals (Q2) (Q3) (Q4.1, first part), R square (Q6.2), etc.
+4. Regression model: predicted values and residual analysis. (Q6.1)
+5. F test: H0: all seasonal coefficients = 0. (Q4.1, second part)
+6. F test: H0: trend coefficient = 0. (Q4.2)
+7. F test: H0: June coefficient = July coefficient. (Q5)
+8. TS plot of actual vs predicted. (Q6.1)

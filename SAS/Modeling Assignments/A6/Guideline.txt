@@ -1,0 +1,15 @@
+1. Plot of CRESTPR (Q(a)).
+2. ARIMA of CRESTPR (Q(a)).
+3. ARIMA of 1st-order difference of CRESTPR (Q(b)).
+	-Confirms stationarity and invertibility.
+	-PACF decays but not significant enough; IACF decays in a more observable manner.
+	-ACF chops off at lag=1; therefore MA(1).
+4. Plot of DIFF_CRESTPR.
+	-Not designated, but a side proof of stationarity of the time series.
+5. Model of MA(1) process, with ARIMA of residuals (Q(c)).
+	-Constant term is not significant.
+6. Model of MA(1) process, with constant set at 0 (Q(c)).
+	-Residual term is good.
+	-Therefore a better model than 5.
+6. Model of AR(1) process, with ARIMA of residuals (Q(d)).
+	-Not a good model.
