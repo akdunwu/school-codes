@@ -19,12 +19,12 @@ class Solution:
                 end = mid
             else:
                 start = mid
-        return min(nums[start], nums[end])    
+        return min(nums[start], nums[end])
 
 
 
 
 
 if __name__ == "__main__":
-    A=[4,5,6,7,0,1,2]
+    A=[4,5,6,7,-2,1,2]
     print(Solution().findMin(A))
